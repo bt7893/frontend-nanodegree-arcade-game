@@ -1,6 +1,7 @@
 # Basic Gameplay
 Using the arrow keys on the keyboard, navigate the player across the busy road to collect all three gems.
 Avoid the enemy bugs. Crashing on them will cause you to lose a life. Upon collecting all 3 gems, proceed to save the princess. The player gets a total of 3 lives.
+
 ![Game Rules](http://bt7893.github.io/frontend-nanodegree-arcade-game/images/game_rules.png)
 
 ### Starting the game
