@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Effective JavaScript: Frogger</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
-</body>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Frontend-nanodegree-arcade-game by bt7893</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/bt7893/frontend-nanodegree-arcade-game">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Frontend-nanodegree-arcade-game</h1>
+            <h2>Project P3: Frogger Arcade Game</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/bt7893/frontend-nanodegree-arcade-game/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/bt7893/frontend-nanodegree-arcade-game/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="basic-gameplay" class="anchor" href="#basic-gameplay" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Gameplay</h1>
+
+<p>Navigate the player across the busy road to collect all three gems.
+Avoid the enemy bugs. Crashing on them will cause you to lose a life.
+Upon collecting all 3 gems, proceed to save the princess.
+You have a total of 3 lives.
+<img src="http://bt7893.github.io/frontend-nanodegree-arcade-game/images/game_rules.png" alt="Game Rules"></p>
+
+<h3>
+<a id="starting-the-game" class="anchor" href="#starting-the-game" aria-hidden="true"><span class="octicon octicon-link"></span></a>Starting the game</h3>
+
+<p>When the game is started, an simple instruction banner will be presented. Pressing the SPACEBAR will dismiss the banner and starts the game.</p>
+
+<h3>
+<a id="you-win-event" class="anchor" href="#you-win-event" aria-hidden="true"><span class="octicon octicon-link"></span></a>'You Win' event</h3>
+
+<p>When the player successfully collects all 3 gems and saves the princess, then the player will be presented with a "You Win" banner.
+Press ESC to restart the game. All elements(bugs, hearts, princess) will be reset and the player will be positioned at the start position.</p>
+
+<h3>
+<a id="game-over-event" class="anchor" href="#game-over-event" aria-hidden="true"><span class="octicon octicon-link"></span></a>'Game Over' event</h3>
+
+<p>If an enemy bug hits the player, an alert will display the player's remaining lives. Click OK will dismiss the overlay.
+The Heart icon will display the remaining lives left. Player will be reset at start position.
+When the player run out of lives, then the game is over. The "Game Over" overlay will display over the screen. Pressing the ESC key will restart the game.</p>
+
+<h3>
+<a id="gem-spawning" class="anchor" href="#gem-spawning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gem Spawning</h3>
+
+<p><img src="http://bt7893.github.io/frontend-nanodegree-arcade-game/images/Gem%20Orange.png" alt="Gem">
+Once the game restarts, the gems will spawn again at random location on the lanes.</p>
+
+<h3>
+<a id="enemies" class="anchor" href="#enemies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enemies</h3>
+
+<p><img src="http://bt7893.github.io/frontend-nanodegree-arcade-game/images/enemy-bug.png" alt="Enemy Bug">
+Set the number of bugs on the 'totalEnemies' variable (under app.js). For example, if you set it to 10 enemies, all 10 enemies will be evenly distributed over three lanes. Each time the enemy leaves the frame, it will be random in speed and start position.</p>
+
+<h3>
+<a id="princess" class="anchor" href="#princess" aria-hidden="true"><span class="octicon octicon-link"></span></a>Princess</h3>
+
+<p><img src="http://bt7893.github.io/frontend-nanodegree-arcade-game/images/char-princess-girl.png" alt="Princess">
+Each time the game starts, the princess will spawn at random location on the blue tiles.</p>
+
+<h3>
+<a id="player" class="anchor" href="#player" aria-hidden="true"><span class="octicon octicon-link"></span></a>Player</h3>
+
+<p><img src="http://bt7893.github.io/frontend-nanodegree-arcade-game/images/char-boy.png" alt="Player">
+The player can navigate up, down, left and right but cannot navigate out of the screen.</p>
+
+<h3>
+<a id="speed" class="anchor" href="#speed" aria-hidden="true"><span class="octicon octicon-link"></span></a>Speed</h3>
+
+<p>You can change the speed of the game by changing the 'gameSpeed' variable (under app.js).</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/bt7893">bt7893</a> can be found on <a href="https://github.com/bt7893/frontend-nanodegree-arcade-game">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
 </html>
