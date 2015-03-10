@@ -9,8 +9,7 @@ You have a total of 3 lives.
 When the game is started, an simple instruction banner will be presented. Pressing the SPACEBAR will dismiss the banner and starts the game.
 
 ### 'You Win' event
-When the player successfully collects all 3 gems and saves the princess, then the player will be presented with a "You Win" banner.
-Press ESC to restart the game. All elements(bugs, hearts, princess) will be reset and the player will be positioned at the start position.
+When the player successfully collects all 3 gems and saves the princess, then the player will be presented with a "You Win" banner. Press ESC to restart the game. All elements(bugs, hearts, princess) will be reset and the player will be positioned at the start position.
 
 ### 'Game Over' event
 If an enemy bug hits the player, an alert will display the player's remaining lives. Click OK will dismiss the overlay.
