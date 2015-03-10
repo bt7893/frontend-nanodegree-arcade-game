@@ -17,20 +17,24 @@ If an enemy bug hits the player, an alert will display the player's remaining li
 The Heart icon will display the remaining lives left. Player will be reset at start position.
 When the player run out of lives, then the game is over. The "Game Over" overlay will display over the screen. Pressing the ESC key will restart the game.
 
-### Gem Spawning
+
 ![Gem](http://bt7893.github.io/frontend-nanodegree-arcade-game/images/Gem%20Orange.png)
+### Gem Spawning
 Once the game restarts, the gems will spawn again at random location on the lanes.
 
-### Enemies
+
 ![Enemy Bug](http://bt7893.github.io/frontend-nanodegree-arcade-game/images/enemy-bug.png)
+### Enemies
 Set the number of bugs on the 'totalEnemies' variable (under app.js). For example, if you set it to 10 enemies, all 10 enemies will be evenly distributed over three lanes. Each time the enemy leaves the frame, it will be random in speed and start position.
 
-### Princess
+
 ![Princess](http://bt7893.github.io/frontend-nanodegree-arcade-game/images/char-princess-girl.png)
+### Princess
 Each time the game starts, the princess will spawn at random location on the blue tiles.
 
-### Player
+
 ![Player](http://bt7893.github.io/frontend-nanodegree-arcade-game/images/char-boy.png)
+### Player
 The player can navigate up, down, left and right but cannot navigate out of the screen.
 
 ### Speed
