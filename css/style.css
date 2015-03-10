@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.canvasContainer
+{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 100px;
+    bottom: 100px;
+    z-index: 1;
+    background-color: Black;
+}
+
+.contextCanvas
+{   position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
